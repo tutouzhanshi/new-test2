@@ -22,10 +22,10 @@ import java.util.List;
  *               -- 2022/10/25
  */
 public class AllConfig {
-    public static final String VxAppId = "微信的APPID";
-    public static final String VxAppSecret = "微信的密钥";
-    public static final String WeatherKey = "高德地图key";
-    public static final String WeatherKey_HeFeng = "和风天气KEY";
+    public static final String VxAppId = "wx34d231d36c8d7f94";
+    public static final String VxAppSecret = "91edc6a5324ae30837251b8854f4b663";
+    public static final String WeatherKey = "e592a8239345e02ec7254af9a46efeff";
+    public static final String WeatherKey_HeFeng = "8ff2ed4ad1b04d04843cd2b6acb474b3";
 
     //下列所有填写的  true 为开启， false 为不开启 ，#XXXXXX是颜色16进制HEX码（不知道颜色16进制HEX码可以百度）
     //系统开关
@@ -38,6 +38,7 @@ public class AllConfig {
 
 
     //基本类型消息
+    public static final FunctionConfig open_city = new FunctionConfig(true,"#FFCCCC");//是否开启称呼
     public static final FunctionConfig open_name = new FunctionConfig(true,"#FFCCCC");//是否开启称呼
     public static final FunctionConfig open_birthDay = new FunctionConfig(true,"#FFCCCC"); //是否开启日期计算
     public static final boolean open_self_date_compute = true; //本地计算时间，周为中文
@@ -76,29 +77,68 @@ public class AllConfig {
         //  注意：日期里面的数字，填正常的数字就行了.比如1就是1，不要填01
         //  注意：每个用户信息的最后一项不需要加逗号！！！
         //new BirthDay()里面代表[年]、[月]、[日]、[是否是农历(true为农历、false为公历)]、[是否统计天数(true为统计，false为倒计时)]、[倒计时到0天提示信息(如果类型为统计可以不填)]
-        userList.add(getUser(
-                "这个人的微信号", //扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "模板ID", //要给这个人发送的模板ID
-                "pt", //咋称呼这个人
-                "江苏省南京市玄武区", //这个人的详细地址
-                "南京", //这个人在的城市
-                new BirthDay(1999,2,15,true,false,"pt生日快乐！！"),
-                new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
-                new BirthDay(2020,7,8,true,true),
-                new BirthDay(2020,7,8,true,false,"周年快乐！！！")
-        ));
+//         userList.add(getUser(
+//                 "oeSBO5veHm1oEw2fiHC1LLlvUeSM", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+//                 "mUFYQQBDChy1Kfbmww3RTVM1M379znA363TYLSlmYFc", //要给这个人发送的模板ID
+//                 "云环姐姐", //咋称呼这个人
+//                 "北京市朝阳区", //这个人的详细地址
+//                 "北京", //这个人在的城市
+//                 new BirthDay(1999,2,21,true,false,"pt生日快乐！！"),
+//                 new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
+//                 new BirthDay(2020,7,8,true,true),
+//                 new BirthDay(2020,7,8,true,false,"周年快乐！！！")
+//         ));
+//        userList.add(getUser(
+//                "oeSBO5vpuGXqU7uYJwfjQpu_vztA", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+//                "mUFYQQBDChy1Kfbmww3RTVM1M379znA363TYLSlmYFc", //要给这个人发送的模板ID
+//                "明辉哥", //咋称呼这个人
+//                "河南省新乡市牧野区河南师范大学", //这个人的详细地址
+//                "新乡", //这个人在的城市
+//                new BirthDay(1999,2,21,true,false,"pt生日快乐！！"),
+//                new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
+//                new BirthDay(2020,7,8,true,true),
+//                new BirthDay(2020,7,8,true,false,"周年快乐！！！")
+//        ));
 
         userList.add(getUser(
-                "这个人扫码后的微信号",//扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "微信消息模板ID",//要给这个人发送的模板ID
-                "这个人的称呼",//咋称呼这个人
-                "江苏省南京市玄武区",//这个人的详细地址
-                "南京",//这个人在的城市
+                "oeSBO5hqMScqg4KIMs2n1Fym4T8o", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+                "VW4D9EwHyavNq2ZaH9RT5mdtrBLpTkWzOgViRG5UzhE", //要给这个人发送的模板ID
+                "勾八闯，别打游戏了你看看几点了",//咋称呼这个人
+                "河南省新乡市牧野区",//这个人的详细地址
+                "新乡",//这个人在的城市
+
+                new BirthDay(2001,6,21,true,false,"pt生日快乐！！"),
                 new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
-                new BirthDay(1999,2,15,true,false,"pt生日快乐！！"),
                 new BirthDay(2020,7,8,true,true),
                 new BirthDay(2020,7,8,true,false,"周年快乐！！！")
+
         ));
+        userList.add(getUser(
+                "oeSBO5uFR_aGjX8pwuSSMHcWeJ7s", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+                "VW4D9EwHyavNq2ZaH9RT5mdtrBLpTkWzOgViRG5UzhE", //要给这个人发送的模板ID
+                "勾八闯，别打游戏了你看看几点了",//咋称呼这个人
+                "河南省新乡市牧野区",//这个人的详细地址
+                "新乡",//这个人在的城市
+
+                new BirthDay(2001,6,21,true,false,"pt生日快乐！！"),
+                new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
+                new BirthDay(2020,7,8,true,true),
+                new BirthDay(2020,7,8,true,false,"周年快乐！！！")
+
+        ));
+//        userList.add(getUser(
+//                "oeSBO5mESD1vSjo5W_CcJoEpPfQw", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+//                "mUFYQQBDChy1Kfbmww3RTVM1M379znA363TYLSlmYFc", //要给这个人发送的模板ID
+//                "田田晚安奥",//咋称呼这个人
+//                "浙江省绍兴市",//这个人的详细地址
+//                "绍兴",//这个人在的城市
+//
+//                new BirthDay(2001,6,21,true,false,"pt生日快乐！！"),
+//                new BirthDay(1999,8,11,false,false,"生日快乐哦~~"),
+//                new BirthDay(2020,7,8,true,true),
+//                new BirthDay(2020,7,8,true,false,"周年快乐！！！")
+//
+//        ));
 
 
 
