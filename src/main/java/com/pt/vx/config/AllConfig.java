@@ -102,7 +102,7 @@ public class AllConfig {
 
         userList.add(getUser(
                 "oeSBO5hqMScqg4KIMs2n1Fym4T8o", //扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "VW4D9EwHyavNq2ZaH9RT5mdtrBLpTkWzOgViRG5UzhE", //要给这个人发送的模板ID
+                "o1ClyJcWiasGoUculjQMtKpjHM3Zo2JYdy1DPO4rAzI", //要给这个人发送的模板ID
                 "继续努力，多读书多看报少吃零食多睡觉",//咋称呼这个人
                 "河南省新乡市牧野区",//这个人的详细地址
                 "新乡",//这个人在的城市
@@ -115,7 +115,7 @@ public class AllConfig {
         ));
         userList.add(getUser(
                 "oeSBO5uFR_aGjX8pwuSSMHcWeJ7s", //扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "VW4D9EwHyavNq2ZaH9RT5mdtrBLpTkWzOgViRG5UzhE", //要给这个人发送的模板ID
+                "o1ClyJcWiasGoUculjQMtKpjHM3Zo2JYdy1DPO4rAzI", //要给这个人发送的模板ID
                 "杨闯少爷，多读书多看报少吃零食多睡觉",//咋称呼这个人
                 "河南省新乡市牧野区",//这个人的详细地址
                 "新乡",//这个人在的城市
@@ -128,8 +128,8 @@ public class AllConfig {
         ));
        userList.add(getUser(
                "oeSBO5mESD1vSjo5W_CcJoEpPfQw", //扫码关注你的测试号以后，测试平台会出现TA的微信号
-               "mUFYQQBDChy1Kfbmww3RTVM1M379znA363TYLSlmYFc", //要给这个人发送的模板ID
-               "田田晚安奥",//咋称呼这个人
+               "o1ClyJcWiasGoUculjQMtKpjHM3Zo2JYdy1DPO4rAzI", //要给这个人发送的模板ID
+               "田田，多读书多看报少吃零食多睡觉",//咋称呼这个人
                "浙江省绍兴市",//这个人的详细地址
                "绍兴",//这个人在的城市
 
