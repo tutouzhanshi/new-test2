@@ -261,6 +261,9 @@ public class MessageService {
         BirthDay birthDay = user.getBirthDays()[0];
         setMap(map, KeyConfig.KEY_HOROSCOPE, AllConfig.open_horoscope, () -> ApiUtil.getHoroscopeRead2(birthDay));
     }
+     private void setCity(HashMap<String, DataInfo> map,User user){
+        setMap(map, KeyConfig.KEY_CITY,user.getCity(),AllConfig.open_city);
+    }
     private void setName(HashMap<String, DataInfo> map,User user){
         setMap(map, KeyConfig.KEY_USER_NAME,user.getUserName(),AllConfig.open_name);
     }
