@@ -38,7 +38,7 @@ public class AllConfig {
 
 
     //基本类型消息
-    public static final FunctionConfig open_city = new FunctionConfig(true,"#FFCCCC");//是否开启称呼
+    public static final FunctionConfig open_city = new FunctionConfig(true,"#FFCCCC");//是否开启城市
     public static final FunctionConfig open_name = new FunctionConfig(true,"#FFCCCC");//是否开启称呼
     public static final FunctionConfig open_birthDay = new FunctionConfig(true,"#FFCCCC"); //是否开启日期计算
     public static final boolean open_self_date_compute = true; //本地计算时间，周为中文
