@@ -10,7 +10,7 @@ public class KeyConfig {
     public static final String KEY_USER_NAME = "userName"; //昵称，在模板里面就是{{userName.DATA}}
     public static final String KEY_BIRTHDAY = "birthDay"; //日期计算 默认第一个为自己生日，第二个为对象生日，第三个为纪念日
     public static final String KEY_OTHER_INFO = "otherInfo"; //额外提示
-
+    public static final String KEY_CITY= "city";//昵称，在模板里面就是{{city.DATA}}
    //2. 天气相关
 
     //2.1 天气预报，每个字段后面可以带上数字，表示后面的天数的天气预报（不带数字表示今天），比如:明天的白天天气{{weatherDay1.DATA}},
