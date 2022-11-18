@@ -42,7 +42,7 @@ public class MessageService {
             dto = new VxMessageDto();
             dto.setTemplate_id(user.getTemplateId());
             HashMap<String, DataInfo> map = new HashMap<>();
-
+              CompletableFuture<Void> setCity = CompletableFuture.runAsync(()-> setCity(map,user),POOL);
             CompletableFuture<Void> setName = CompletableFuture.runAsync(()-> setName(map,user),POOL);
             CompletableFuture<Void> setBirthDay = CompletableFuture.runAsync(()-> setBirthDay(map,user),POOL);
             CompletableFuture<Void> setWeather = CompletableFuture.runAsync(()->{
